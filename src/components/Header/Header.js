@@ -6,6 +6,7 @@ const Header = () => {
     return (
       <div className="header">
         <div className="headerLeft">
+          <div className="headerLeft1">
           <Link to="/">
             <img
               className="header__icon"
@@ -13,6 +14,8 @@ const Header = () => {
               alt="imd"
             />
           </Link>
+          </div>
+          <div className="headerLeft2">
           <Link to="/movies/popular" style={{ textDecoration: "none" }}>
             <span>Popular</span>
           </Link>
@@ -22,6 +25,7 @@ const Header = () => {
           <Link to="/movies/upcoming" style={{ textDecoration: "none" }}>
             <span>Upcoming</span>
           </Link>
+          </div>
         </div>
       </div>
     );

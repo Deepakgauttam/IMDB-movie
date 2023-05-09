@@ -30,6 +30,7 @@ const Home = () => {
             infiniteLoop={true}
             showStatus={false}
           >
+            
             {popularMovie.map((movie) => (
               <Link
                 style={{ textDecoration: "none", color: "white" }}
@@ -55,11 +56,14 @@ const Home = () => {
                     </span>
                   </div>
                   <div className="posterImage__description">
+                    <p>
                     {movie ? movie.overview : ""}
+                    </p>
                   </div>
                 </div>
               </Link>
             ))}
+            
           </Carousel>
           <MovieList />
         </div>
