@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* margin-bottom: 100px; */
 }
 
 .movie__intro {
@@ -21,8 +22,8 @@
   align-items: center;
   width: 75%;
   display: flex;
-  position: relative;
-  /* bottom: 40px; */
+  /* position: relative; */
+  bottom: 40px;
 }
 
 .movie__detailLeft {
@@ -30,9 +31,12 @@
 }
 
 .movie__poster {
-  width: 300px;
+  width: 100rem;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+  margin: 2rem;
+  max-width: 100%;
+  height: auto;
 }
 
 .movie__detailRight {
@@ -42,6 +46,7 @@
   height: 450px;
   align-items: center;
   justify-content: space-between;
+  /* margin-left: 3rem; */
 }
 
 .movie__detailRightTop > div {
@@ -60,6 +65,10 @@
 
 .movie__genres {
   margin: 1.25rem 0;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .movie__genre {
@@ -70,8 +79,8 @@
 }
 
 .movie__detailRightBottom {
-  margin: 2rem 0;
-  flex: 0.8;
+  /* margin: 2rem 0;
+  flex: 1; */
 }
 
 .synopsisText {
@@ -79,7 +88,7 @@
   margin-bottom: 1.25rem;
   font-weight: 600;
   display: flex;
-  position: relative;
+  /* position: relative; */
   align-items: center;
 }
 .synopsisText > div:last-of-type {
@@ -87,15 +96,17 @@
 }
 
 .movie__links {
-  /* position: relative;
-    bottom: 120px;
-    display: flex;
+  /* position: relative; */
+  /* margin-top:3rem;
+    bottom: 10px; */
+    /* display: flex;
     justify-content: space-between; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
   /* width: 75%; */
 }
 
@@ -152,15 +163,30 @@
   justify-content: center;
 }
 .movie__h {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: azure;
   margin-bottom: 3rem;
-  width: 80%;
-  margin-left: 10%;
+  width: fit-content;
+  color:black;
   border-radius: 2rem;
+  padding: 1rem; */
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    margin: auto;
+    width: fit-content;
+    color:black;
+    border-radius: 2rem;
+    padding: 1.5rem;  
+}
+.movie__h>.movie__heading {
+   font-size: 1.5rem;
 }
 
 .movie__h1 {
@@ -177,12 +203,70 @@
   margin: 1rem;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 1000px) {
+/* .movie-links{
+    margin-bottom: 3rem;
+} */
+
+@media only screen and (min-width: 300px) and (max-width: 1000px) {
+    .movie__links{
+        margin-bottom:3rem;
+    }
+    .movie__name{
+        font-size: 1.5rem;
+    }
+    .movie__detailRightBottom{
+
+        /* margin-bottom: 100px; */
+    }
   .movie {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom:6rem;
+  }
+  .movie__detail {
+    align-items: center !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    /* margin-top: 50px; */
+    margin-bottom: 50px;
+  }
+
+  .movie__backdrop {
+    max-width: 100%;
+    height: auto;
+  }
+  .movie__h1{
+    width: 80%;
+  /* margin-left: 10%; */
+  
+  }
+  .movie1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 300px) {
+    .movie__links{
+        margin-top:10rem;
+    }
+    .movie__name{
+        font-size: 1.5rem;
+    }
+    .movie__detailRightBottom{
+
+        /* margin-bottom: 100px; */
+    }
+  .movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:6rem;
   }
   .movie__detail {
     align-items: center !important;
@@ -200,7 +284,26 @@
   }
   .movie__h1{
     width: 80%;
-  margin-left: 10%;
+  /* margin-left: 10%; */
   
   }
+  .movie1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
+.movie__poster{
+    align-items: center;
+}
+
+.movie__posterBox{
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.movie__genres>span{
+    margin-bottom: 1rem;
+}
+
