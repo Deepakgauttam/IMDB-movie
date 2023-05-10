@@ -1,4 +1,4 @@
-.poster {
+/* .poster {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -59,7 +59,7 @@
     margin-bottom: 0.25rem;
     display: flex;
     text-align: left;
-    width: 100%;
+    width: 50%;
   }
   @media only screen and (min-width: 200px) and (max-width: 500px) {
     .posterImage__description {
@@ -122,7 +122,7 @@
     .posterImage__description {
       font-size: 1.6rem;
     }
-  }
+  } */
   
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* .posterImage{
@@ -178,3 +178,246 @@
     text-align: left;
     width: 50%;
 } */
+
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* .posterImage{
+  max-width: 100%;
+  height: auto;
+}
+
+.posterImage > img {
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.posterImage__overlay {
+  position: absolute;
+  padding: 2rem;
+  bottom: 0px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.posterImage__overlay:hover {
+  opacity: 1;
+}
+
+.posterImage__title {
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+.posterImage__runtime {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.posterImage__rating {
+  margin-left: 1rem;
+}
+
+.posterImage__description {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  text-align: left;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+.posterImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.posterImage__overlay {
+  height: 40%;
+  padding: 3rem;
+}
+
+.posterImage__title {
+  font-size: 4rem;
+}
+
+.posterImage__runtime {
+  font-size: 2rem;
+}
+
+.posterImage__description {
+  font-size: 1.25rem;
+  width: 75%;
+}
+}
+
+@media screen and (min-width: 1024px) {
+.posterImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.posterImage__overlay {
+  height: 30%;
+  padding: 4rem;
+}
+
+.posterImage__title {
+  font-size: 5rem;
+}
+
+.posterImage__runtime {
+  font-size: 2.5rem;
+}
+
+.posterImage__description {
+  font-size: 1.5rem;
+  width: 50%;
+}
+} */
+
+
+.posterImage{
+  max-width: 100%;
+  height: auto;
+}
+
+.posterImage > img {
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.posterImage__overlay {
+  position: absolute;
+  padding: 2rem;
+  bottom: 0px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.posterImage__overlay:hover {
+  opacity: 1;
+}
+
+.posterImage__title {
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+.posterImage__runtime {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.posterImage__rating {
+  margin-left: 1rem;
+}
+
+.posterImage__description {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  text-align: left;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+.posterImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.posterImage__overlay {
+  height: 40%;
+  padding: 3rem;
+}
+
+.posterImage__title {
+  font-size: 4rem;
+}
+
+.posterImage__runtime {
+  font-size: 2rem;
+}
+
+.posterImage__description {
+  font-size: 1.25rem;
+  width: 75%;
+}
+}
+@media screen and (max-width: 768px) {
+.posterImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.posterImage__overlay {
+  height: 40%;
+  padding: 3rem;
+}
+
+.posterImage__title {
+  font-size: 1rem;
+}
+
+.posterImage__runtime {
+  font-size: 1rem;
+}
+
+.posterImage__description {
+  font-size: 0.4rem;
+  width: 75%;
+}
+}
+
+@media screen and (min-width: 1024px) {
+.posterImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.posterImage__overlay {
+  height: 30%;
+  padding: 5rem;
+}
+
+.posterImage__title {
+  font-size: 4rem;
+}
+
+.posterImage__runtime {
+  font-size: 4rem;
+}
+
+.posterImage__description {
+  font-size: 1rem;
+  width: 50%;
+}
+}
